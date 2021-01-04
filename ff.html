@@ -1,0 +1,44 @@
+<html>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+</script>
+
+<link rel="stylesheet" href = "ff.css">
+<script src = "ff.js"></script>
+
+<h1> Filter Fun Mini Project</h1>
+
+<canvas id = "can">
+</canvas>
+
+<h2> Load Image </h2>
+
+<input type = "file"
+       multiple = "false"
+       accept = "image/*"
+       id = "photofile"
+       onchange = "loadImage()">
+
+<h2> Choose Filter </h2>
+<h5> *NOTE*: Filter time may depend on size of the image </h5>
+
+<input type = "button"
+       value = "Make Grayscale"
+       onclick = "makeGray()">
+
+<input type = "button"
+       value = "Red"
+       onclick = "red()">
+
+<input type = "button"
+       value = "Make Rainbow"
+       onclick = "rainbow()">
+
+<p>
+<input type = "button"
+       value = "Reset Image"
+       onclick = "resetImage()">
+<input type = "button"
+       value = "Clear Canvas"
+       onclick = "clearCanvas()">
+</p>
+</html>
